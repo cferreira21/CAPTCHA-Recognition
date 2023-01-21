@@ -17,8 +17,8 @@ Dados: https://www.dropbox.com/s/itfqyh1trx9da7b/dados.zip?dl=0
 
 ## Treinamento
 
-O modelo é treinado usando o otimizador Adam com o loss "Categorical Crossentropy" e um tamanho de lote de 50. O treinamento é feito por 21 épocas.
+O modelo é treinado usando o otimizador Adam com o loss "Categorical Crossentropy" e um tamanho de batch de 50. O treinamento é feito por 21 epochs.
 
 ## Conclusão
 
-Este projeto demonstra a eficácia de usar uma CNN para reconhecer imagens de CAPTCHA. O modelo alcançou boa precisão e pode ser potencialmente usado em aplicações reais. Detalhes sobre o resultado podem ser encontrados no próprio notebook.
+Este projeto demonstra a eficácia de usar uma CNN para reconhecer imagens de CAPTCHA. O modelo alcançou boa precisão e pode ser potencialmente usado em aplicações reais. Detalhes sobre o resultado podem ser encontrados no corpo do próprio notebook.
