@@ -1,24 +1,47 @@
-# Reconhecimento-de-Captcha
-Reconhecimento de Captcha utilizando uma CNN
+# CAPTCHA Recognition
 
-## Introdução
+## CAPTCHA recognition using a CNN
+### Introduction
 
-Este projeto tem como objetivo desenvolver um modelo de aprendizado de máquina para reconhecer imagens de CAPTCHA. CAPTCHAs (Completely Automated Public Turing test to tell Computers and Humans Apart) são usados para garantir que um usuário seja humano e não um computador. No entanto, eles podem ser difíceis de ler para os humanos ou também ser vulneráveis a ataques. O objetivo deste projeto é desenvolver um modelo que possa reconhecer imagens de CAPTCHA com boa precisão.
+This project aims to develop a machine learning model to recognize CAPTCHA images. CAPTCHAs (Completely Automated Public Turing test to tell Computers and Humans Apart) are used to ensure that a user is human and not a computer. However, they can be difficult for humans to read or may also be vulnerable to attacks. The goal of this project is to develop a model that can recognize CAPTCHA images with good accuracy.
+Data
 
-## Dados
+The data used in this project consists of a set of CAPTCHA images and their respective labels. The images are in PNG format and have a resolution of 180x50 pixels. Each image contains 6 characters, and the labels are the corresponding characters in the image. The dataset was split into 80% for training and 20% for testing.
 
-Os dados utilizados neste projeto são um conjunto de imagens de CAPTCHA e suas respectivas labels. As imagens são no formato PNG e têm uma resolução de 180x50 pixels. Cada imagem contém 6 caracteres e as labels são os caracteres correspondentes na imagem. O conjunto de dados foi dividido em 80% para treinamento e 20% para teste.
+Data: Download Link
+### Model
 
-Dados: https://www.dropbox.com/s/itfqyh1trx9da7b/dados.zip?dl=0
+The model architecture consists of several layers, including convolutional layers for feature extraction, pooling layers for down-sampling, and fully connected layers for classification. The input layer receives the CAPTCHA images, and the output layer produces the predicted characters.
 
-## Modelo
+-  Input Layer
 
-<img src="./media/graphviz.png"/> 
+Receives the raw image or data input.
 
-## Treinamento
+-  Feature Extraction Layers
 
-O modelo é treinado usando o otimizador Adam com o loss "Categorical Crossentropy" e um tamanho de batch de 50. O treinamento é feito por 21 epochs.
+Convolutional Layer 1: Applies filters to extract low-level features.
+Pooling Layer 1: Reduces spatial dimensions, typically using max pooling.
+Convolutional Layer 2: Extracts more complex features.
+Pooling Layer 2: Further reduces dimensions.
+Convolutional Layer 3: Captures even higher-level features.
+Batch Normalization: Normalizes activations to stabilize and accelerate training.
 
-## Conclusão
+- Classification Layers
 
-Este projeto demonstra a eficácia de usar uma CNN para reconhecer imagens de CAPTCHA. O modelo alcançou boa precisão e pode ser potencialmente usado em aplicações reais. Detalhes sobre o resultado podem ser encontrados no corpo do próprio notebook.
+The network branches into six fully connected (dense) layers, one for each character in the CAPTCHA.
+
+4. Dropout Layer
+
+Helps prevent overfitting by randomly deactivating neurons during training.
+
+5. Output Layer
+
+Produces the final prediction.
+<img src="./media/graphviz.png"/>
+
+### Training
+
+The model is trained using the Adam optimizer with the loss function "Categorical Crossentropy" and a batch size of 50. Training is conducted over 21 epochs.
+### Conclusion
+
+This project demonstrates the effectiveness of using a CNN to recognize CAPTCHA images. The model achieved good accuracy and can potentially be used in real-world applications. Details about the results can be found in the body of the notebook itself.
