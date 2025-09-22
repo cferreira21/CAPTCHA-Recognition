@@ -9,7 +9,7 @@ Este projeto tem como objetivo desenvolver um modelo de aprendizado de máquina 
 
 Os dados utilizados neste projeto são um conjunto de imagens de CAPTCHA e suas respectivas labels. As imagens são no formato PNG e têm uma resolução de 180x50 pixels. Cada imagem contém 6 caracteres e as labels são os caracteres correspondentes na imagem. O conjunto de dados foi dividido em 80% para treinamento e 20% para teste.
 
-Dados: https://www.dropbox.com/s/itfqyh1trx9da7b/dados.zip?dl=0
+Dados: [Download dos dados](https://www.dropbox.com/s/itfqyh1trx9da7b/dados.zip?dl=0)
 
 ## Modelo
 
