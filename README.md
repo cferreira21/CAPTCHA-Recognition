@@ -39,7 +39,6 @@ Helps prevent overfitting by randomly deactivating neurons during training.
 - Output Layer
 
 Produces the final prediction.
-<img src="./media/graphviz.png"/>
 
 ### Training
 
